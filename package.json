@@ -1,5 +1,5 @@
 {
-  "homepage": "https://Skal3r/github.io/NameWebsite",
+  "homepage": "https://Skal3r.github.io/NameWebsite",
   "scripts":{
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build" 
