@@ -27,6 +27,13 @@ let color = 'hsl('+ Math.random()*360+', 100%, 50%)'
 
 //Controls
 const randomizeButton = this.document.getElementById('randomizeButton');
+const resetButton = this.document.getElementById('resetButton');
+const slider_spread = this.document.getElementById('spread');
+const label_spread = this.document.querySelector('[for="spread"]');
+const slider_sides = this.document.getElementById('sides');
+const label_sides = this.document.querySelector('[for="sides"]');
+
+
 
 function drawBranch(level)
 {
@@ -69,19 +76,58 @@ function drawFractal()
         drawBranch(0);
     }
 ctx.restore();
-
+updateSliders();
 }
 
 function randomizeFractal()
 {
-    sides = Math.random()*7 + 2;
+    sides = Math.floor(Math.random()*7 + 2);
     scale = Math.random() * 0.2 +0.4;
     spread = Math.random() * 2.9 +0.1;
     color = 'hsl('+ Math.random()*360+', 100%, 50%)';
-    drawFractal();
 }
-randomizeButton.addEventListener('click', randomizeFractal);
+function resetFractal()
+{
+    sides = 5;
+    scale =0.5;
+    spread = 0.7;
+    color = 'hsl(290, 100%, 50%)';
+}
+randomizeButton.addEventListener('click', function()
+{
+    randomizeFractal();
+    drawFractal();
+});
 
+
+resetButton.addEventListener('click', function()
+{
+    resetFractal();
+    drawFractal();
+});
+
+slider_sides.addEventListener('change', function(e)
+{
+    sides = e.target.value;
+    updateSliders();
+    drawFractal();
+});
+
+
+slider_spread.addEventListener('change', function(e)
+{
+    spread = e.target.value;
+    drawFractal();
+});
+function updateSliders()
+{
+    slider_spread.value = spread;
+    label_spread.innerText = 'Spread: ' +Number(spread).toFixed(2);
+    slider_sides.value = sides;
+    label_sides.innerText = 'Side: ' +Number(sides).toFixed(0);
+}
+resetFractal();
+drawFractal();
 
 
 });

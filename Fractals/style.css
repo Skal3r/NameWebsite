@@ -28,3 +28,8 @@ button
     font-size: 20px;
 
 }
+label,input
+{
+    color:  white;
+    font-size: 20px;
+}
