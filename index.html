@@ -3,8 +3,21 @@
 <html>
   <head>
     <title>This is the title of the webpage!</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   <body>
-    <p>This is an example paragraph as the index html file. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
+    <ul class="menu">
+      <li><a class="menuItem" href="#">Home</a></li>
+      <li><a class="menuItem" href="#">Resume</a></li>
+      <li><a class="menuItem" href="#">Fractal</a></li>
+    </ul>
+    <button class="hamburger">
+      <!-- material icons https://material.io/resources/icons/ -->
+      <i class="menuIcon material-icons">menu</i>
+      <i class="closeIcon material-icons">close</i>
+    <script src="BurgerMenu.js"></script>
+
+    </button>
   </body>                   
 </html>
