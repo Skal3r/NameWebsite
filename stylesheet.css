@@ -13,7 +13,7 @@ body {
   color:#ffffff;
   font-family:Helvetica, serif;
   font-weight:100;
-  background-image:url("/assets/images/demos/bg-gr-v.png"), url("HeaderImage_Fractal.png");
+  background-image:url("/assets/images/demos/bg-gr-v.png"), url("assets/HeaderImage_Fractal.png");
   background-attachment:scroll, scroll;
   background-position:left top, center center;
   background-repeat:repeat-y, no-repeat;
@@ -131,12 +131,12 @@ body {
 }
 .card-header{
   height:155px;
-  background-image:url("WebsiteThumbnail.png");
+  background-image:url("assets/WebsiteThumbnail.png");
   background-size:cover;
   background-position:center center;
 }
 .card-header.ch2{
-  background-image:url("VW_Pagescreeshot.png");
+  background-image:url("assets/VW_Pagescreeshot.png");
 }
 .card-header.ch3{
   background-image:url("https://via.placeholder.com/350x250/79c267/fff");
