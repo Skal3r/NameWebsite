@@ -139,17 +139,9 @@ body {
   background-image:url("assets/VW_Pagescreeshot.png");
 }
 .card-header.ch3{
-  background-image:url("https://via.placeholder.com/350x250/79c267/fff");
+  background-image:url("Assets/HomeLab.png");
 }
-.card-header.ch4{
-  background-image:url("https://via.placeholder.com/350x250/c5d647/fff");
-}
-.card-header.ch5{
-  background-image:url("https://via.placeholder.com/350x250/f28c33/fff");
-}
-.card-header.ch6{
-  background-image:url("https://via.placeholder.com/350x250/e868a2/fff");
-}
+
 .card-body{
   padding:15px 15px 5px 15px;
   color:#555;
